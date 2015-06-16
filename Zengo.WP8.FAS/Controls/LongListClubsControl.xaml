@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.LongListClubsControl"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns:listcontrols="clr-namespace:Zengo.WP8.FAS.Controls.ListItems;assembly=Zengo.WP8.FAS"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="800" d:DesignWidth="480">
+
+    <UserControl.Resources>
+
+        <!-- The group header template, for groups in the main list -->
+        <DataTemplate x:Key="playersGroupHeader">
+
+            <customcontrols:JumpKeyHeader x:Name="JumpKeyHeaderOnPage" Grid.Row="2" />
+
+        </DataTemplate>
+
+        <!-- The template for groups when they are items in the "array list". -->
+        <DataTemplate x:Key="playersItemHeader">
+
+            <customcontrols:JumpKey x:Name="JumpKeyOnPage" />
+
+        </DataTemplate>
+
+        <!-- The template for a club on the search page -->
+        <DataTemplate x:Key="clubItemForSearchTemplate" >
+
+            <listcontrols:ClubItemForSearch x:Name="ClubItemForSearch" Background="Blue" />
+
+        </DataTemplate>
+
+        <!-- The template for a club on the account page -->
+        <DataTemplate x:Key="clubItemForAccountTemplate" >
+
+            <listcontrols:ClubItemForAccount x:Name="ClubItemForAccount" Background="Blue" />
+
+        </DataTemplate>
+        
+    </UserControl.Resources>
+    
+    
+    <Grid x:Name="LayoutRoot" >
+
+        <toolkit:LongListSelector x:Name="clubsLongList"
+                                          GroupHeaderTemplate="{StaticResource playersGroupHeader}"
+                                          GroupItemTemplate="{StaticResource playersItemHeader}"                                  
+                                          Background="Transparent"
+                                           >
+
+            <toolkit:LongListSelector.GroupItemsPanel>
+                <ItemsPanelTemplate>
+                    <toolkit:WrapPanel/>
+                </ItemsPanelTemplate>
+            </toolkit:LongListSelector.GroupItemsPanel>
+            
+        </toolkit:LongListSelector>
+
+    </Grid>
+
+
+
+</UserControl>

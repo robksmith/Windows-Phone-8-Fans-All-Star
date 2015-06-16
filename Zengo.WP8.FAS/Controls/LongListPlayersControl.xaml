@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.LongListPlayersControl"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:listcontrols="clr-namespace:Zengo.WP8.FAS.Controls.ListItems;assembly=Zengo.WP8.FAS"
+             xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls"
+             mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="800" d:DesignWidth="480">
+    
+
+    <UserControl.Resources>
+
+        <!-- The group header template, for groups in the main list -->
+        <DataTemplate x:Key="playersGroupHeader">
+
+            <customcontrols:JumpKeyHeader x:Name="JumpKeyHeaderOnPage" Grid.Row="2"
+                                     ManipulationStarted="PlayerItemViewOnPage_ManipulationStarted_1" 
+                                     ManipulationCompleted="PlayerItemViewOnPage_ManipulationCompleted_1"/>
+
+        </DataTemplate>
+
+        <!-- The template for groups when they are items in the "jump list". Not setting the GroupItemTemplate property will disable "jump list" functionality. -->
+        <DataTemplate x:Key="playersItemHeader">
+
+            <customcontrols:JumpKey x:Name="JumpKeyOnPage"
+                                     ManipulationStarted="PlayerItemViewOnPage_ManipulationStarted_1" 
+                                     ManipulationCompleted="PlayerItemViewOnPage_ManipulationCompleted_1" />
+
+        </DataTemplate>
+
+        <!-- The template for each player -->
+        <DataTemplate x:Key="playersItemForSearchTemplate" >
+
+            <listcontrols:PlayerItemForSearch x:Name="PlayerItemViewOnPage" 
+                                              PlayerStatsTapped="PlayerItemViewOnPage_PlayerStatsTapped"
+                                              PlayerVoteTapped="PlayerItemViewOnPage_PlayerVoteTapped"/>
+
+        </DataTemplate>
+
+        <DataTemplate x:Key="playersItemForFreeEntryTemplate" >
+
+            <listcontrols:PlayerItemForFreeEntry x:Name="PlayerItemViewOnPage" 
+                                     ManipulationStarted="PlayerItemViewOnPage_ManipulationStarted_1" 
+                                     ManipulationCompleted="PlayerItemViewOnPage_ManipulationCompleted_1"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Key="playersItemForTeamSubmitTemplate" >
+
+            <listcontrols:PlayerItemForTeamSubmit x:Name="PlayerItemViewOnPage" />
+            
+        </DataTemplate>        
+        
+    </UserControl.Resources>
+
+
+    <Grid x:Name="LayoutRoot" Style="{Binding GridStyle}" >
+
+        <toolkit:LongListSelector x:Name="PlayersLongList"
+                                          GroupHeaderTemplate="{StaticResource playersGroupHeader}"
+                                          GroupItemTemplate="{StaticResource playersItemHeader}"
+                                          Background="Transparent">
+            <toolkit:LongListSelector.GroupItemsPanel>
+                <ItemsPanelTemplate>
+                    <toolkit:WrapPanel/>
+                </ItemsPanelTemplate>
+            </toolkit:LongListSelector.GroupItemsPanel>
+        </toolkit:LongListSelector>
+    </Grid>
+
+
+</UserControl>

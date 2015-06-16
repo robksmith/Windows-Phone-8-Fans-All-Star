@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppBarHelp" xml:space="preserve">
+    <value>help</value>
+  </data>
+  <data name="AppBarHistory" xml:space="preserve">
+    <value>history</value>
+  </data>
+  <data name="AppBarSearch" xml:space="preserve">
+    <value>search</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="AppBarShop" xml:space="preserve">
+    <value>win</value>
+  </data>
+  <data name="AppBarSubmit" xml:space="preserve">
+    <value>submit</value>
+  </data>
+  <data name="CentreBackName" xml:space="preserve">
+    <value>Centre Back</value>
+  </data>
+  <data name="EuropeName" xml:space="preserve">
+    <value>Europe</value>
+  </data>
+  <data name="ForwardName" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="FullViewPivot" xml:space="preserve">
+    <value>Full View</value>
+  </data>
+  <data name="GoalKeeperName" xml:space="preserve">
+    <value>Goalkeeper</value>
+  </data>
+  <data name="LeftBackName" xml:space="preserve">
+    <value>Left Back</value>
+  </data>
+  <data name="MidfieldName" xml:space="preserve">
+    <value>Midfielder</value>
+  </data>
+  <data name="ProductTitle" xml:space="preserve">
+    <value>Fans All Star</value>
+  </data>
+  <data name="RightBackName" xml:space="preserve">
+    <value>Right Back</value>
+  </data>
+  <data name="ROTWName" xml:space="preserve">
+    <value>Rest of the world</value>
+  </data>
+  <data name="SubstituteDefenderName" xml:space="preserve">
+    <value>Sub Centre Back</value>
+  </data>
+  <data name="SubstituteForwardName" xml:space="preserve">
+    <value>Sub Forward</value>
+  </data>
+  <data name="SubstituteKeeperName" xml:space="preserve">
+    <value>Sub Goalkeeper</value>
+  </data>
+  <data name="SubstituteMidfielderName" xml:space="preserve">
+    <value>Sub Midfielder</value>
+  </data>
+  <data name="AppBarGoBack" xml:space="preserve">
+    <value>go back</value>
+  </data>
+  <data name="AppBarLogin" xml:space="preserve">
+    <value>login</value>
+  </data>
+  <data name="AppBarRegister" xml:space="preserve">
+    <value>register</value>
+  </data>
+  <data name="AppBarResetPassword" xml:space="preserve">
+    <value>reset password</value>
+  </data>
+  <data name="AppBarSortAscending" xml:space="preserve">
+    <value>sort ascending</value>
+  </data>
+  <data name="AppBarSortDescending" xml:space="preserve">
+    <value>sort descending</value>
+  </data>
+  <data name="AppBarUpdatePassword" xml:space="preserve">
+    <value>update password</value>
+  </data>
+  <data name="BuyVotesPage" xml:space="preserve">
+    <value>Buy Votes</value>
+  </data>
+  <data name="ByClubTitle" xml:space="preserve">
+    <value>By Club</value>
+  </data>
+  <data name="ByCountryTitle" xml:space="preserve">
+    <value>By Country</value>
+  </data>
+  <data name="ByNameTitle" xml:space="preserve">
+    <value>By Name</value>
+  </data>
+  <data name="ByPositionTitle" xml:space="preserve">
+    <value>By Position</value>
+  </data>
+  <data name="CastingVote" xml:space="preserve">
+    <value>Casting Vote</value>
+  </data>
+  <data name="ChangingPassword" xml:space="preserve">
+    <value>Changing Password</value>
+  </data>
+  <data name="ConfirmEmailWatermark" xml:space="preserve">
+    <value>confirm your email address</value>
+  </data>
+  <data name="ConfirmPasswordWatermark" xml:space="preserve">
+    <value>confirm your password</value>
+  </data>
+  <data name="EmailWatermark" xml:space="preserve">
+    <value>your email address</value>
+  </data>
+  <data name="EnterValidEmail" xml:space="preserve">
+    <value>Please enter a valid email address</value>
+  </data>
+  <data name="FavouritesPage" xml:space="preserve">
+    <value>select favourite club</value>
+  </data>
+  <data name="FavouriteTeam1" xml:space="preserve">
+    <value>Please select a first favourite team</value>
+  </data>
+  <data name="FavouriteTeam2" xml:space="preserve">
+    <value>Please select a second favourite team</value>
+  </data>
+  <data name="FirstnameWatermark" xml:space="preserve">
+    <value>your first name</value>
+  </data>
+  <data name="HelpPage" xml:space="preserve">
+    <value>Help Page</value>
+  </data>
+  <data name="ListingByClub" xml:space="preserve">
+    <value>listing by club:</value>
+  </data>
+  <data name="ListingByCountry" xml:space="preserve">
+    <value>listing by country:</value>
+  </data>
+  <data name="ListingByPosition" xml:space="preserve">
+    <value>listing by position:</value>
+  </data>
+  <data name="LoginPageTitle" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MobileWatermark" xml:space="preserve">
+    <value>your mobile number</value>
+  </data>
+  <data name="MyCountryPage" xml:space="preserve">
+    <value>select your country</value>
+  </data>
+  <data name="NewPasswordMessage" xml:space="preserve">
+    <value>A new password has been emailed to you</value>
+  </data>
+  <data name="NoVotesMessage" xml:space="preserve">
+    <value>You don't have enough votes. Do you want to visit the shop?</value>
+  </data>
+  <data name="NoVotesTitle" xml:space="preserve">
+    <value>Not enough votes</value>
+  </data>
+  <data name="PasswordResetDesc" xml:space="preserve">
+    <value>Please enter your registered email address and we will email you a new password.</value>
+  </data>
+  <data name="PasswordResetFailed" xml:space="preserve">
+    <value>Change Password Failed</value>
+  </data>
+  <data name="PasswordWatermark" xml:space="preserve">
+    <value>choose a password</value>
+  </data>
+  <data name="PayPalLink" xml:space="preserve">
+    <value>You will be taken to the paypal website to complete the transaction</value>
+  </data>
+  <data name="PayPalNavFailed" xml:space="preserve">
+    <value>navigation to paypal failed</value>
+  </data>
+  <data name="PayPalTitle" xml:space="preserve">
+    <value>Paypal Payment</value>
+  </data>
+  <data name="PlayersTitle" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>privacy policy</value>
+  </data>
+  <data name="PurchaseLoginWarning" xml:space="preserve">
+    <value>You need to be logged on to make purchases.</value>
+  </data>
+  <data name="RegistrationHelp" xml:space="preserve">
+    <value>Please enter your details and then press the tick button at the bottom</value>
+  </data>
+  <data name="RegistrationPage" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ResetEmailWatermark" xml:space="preserve">
+    <value>enter your registered email address</value>
+  </data>
+  <data name="ResetOtherDesc" xml:space="preserve">
+    <value>If you want a password reset pin for a different account to above, please log out first.</value>
+  </data>
+  <data name="ResetPasswordPage" xml:space="preserve">
+    <value>reset password</value>
+  </data>
+  <data name="SimulatedVoteFailed" xml:space="preserve">
+    <value>Simulated vote {0} failed!</value>
+  </data>
+  <data name="SimulatedVoteSuccessful" xml:space="preserve">
+    <value>Simulated vote {0} has been cast!</value>
+  </data>
+  <data name="SurnameWatermark" xml:space="preserve">
+    <value>your last name</value>
+  </data>
+  <data name="TermsAccept" xml:space="preserve">
+    <value>I accept the terms and conditions</value>
+  </data>
+  <data name="TermsURL" xml:space="preserve">
+    <value>terms and conditions</value>
+  </data>
+  <data name="ValidateAccountMessage1" xml:space="preserve">
+    <value>Your vote will be cast. But for your vote to be counted you must confirm your account by clicking on the link in the welcome email.</value>
+  </data>
+  <data name="ValidateAccountMessage2" xml:space="preserve">
+    <value>If you have confirmed in the last few minutes, please ignore this message.</value>
+  </data>
+  <data name="ValidateAccountTitle" xml:space="preserve">
+    <value>You are not currently validated</value>
+  </data>
+  <data name="VoteFailed" xml:space="preserve">
+    <value>Vote Failed</value>
+  </data>
+  <data name="VoteLoginWarning" xml:space="preserve">
+    <value>You need to be logged on to vote.</value>
+  </data>
+  <data name="VoteSuccessful" xml:space="preserve">
+    <value>Your vote for {0} was submitted successfully</value>
+  </data>
+  <data name="AccountsTitle" xml:space="preserve">
+    <value>my account</value>
+  </data>
+  <data name="ActivationCompleted" xml:space="preserve">
+    <value>Activation of your account is complete</value>
+  </data>
+  <data name="APIUpdates" xml:space="preserve">
+    <value>{0} Api Changes Received</value>
+  </data>
+  <data name="ApplyUpdates" xml:space="preserve">
+    <value>Applying updates - please wait</value>
+  </data>
+  <data name="ChangeMyPassword" xml:space="preserve">
+    <value>change my password</value>
+  </data>
+  <data name="ClearSearch" xml:space="preserve">
+    <value>clear search</value>
+  </data>
+  <data name="ConfirmNewPasswordWatermark" xml:space="preserve">
+    <value>confirm your new password</value>
+  </data>
+  <data name="EnterCurrentPassword" xml:space="preserve">
+    <value>Please enter your current password</value>
+  </data>
+  <data name="EnterNewPassword" xml:space="preserve">
+    <value>Please choose a new password</value>
+  </data>
+  <data name="EnterPinFromEmail" xml:space="preserve">
+    <value>Please enter the pin we emailed</value>
+  </data>
+  <data name="EnterPinInstruction" xml:space="preserve">
+    <value>Enter the pin we emailed to you to activate your account</value>
+  </data>
+  <data name="EnterPinWatermark" xml:space="preserve">
+    <value>enter your pin</value>
+  </data>
+  <data name="EuropeAbriviation" xml:space="preserve">
+    <value>EUR</value>
+  </data>
+  <data name="ExistingPasswordWatermark" xml:space="preserve">
+    <value>your existing password</value>
+  </data>
+  <data name="LastVoteUpdate" xml:space="preserve">
+    <value>Last successfull update {0}</value>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>Later</value>
+  </data>
+  <data name="LoggedOutMessage" xml:space="preserve">
+    <value>You are now logged out</value>
+  </data>
+  <data name="LoginButton" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginPrompt" xml:space="preserve">
+    <value>Please enter your login details.</value>
+  </data>
+  <data name="NewPasswordWatermark" xml:space="preserve">
+    <value>choose a new password</value>
+  </data>
+  <data name="NewVotesAdded" xml:space="preserve">
+    <value>New votes have been added to your account</value>
+  </data>
+  <data name="NotLoggedInPopup" xml:space="preserve">
+    <value>You are not logged in on this phone</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Your password has been changed</value>
+  </data>
+  <data name="PasswordLength" xml:space="preserve">
+    <value>At least 6 characters</value>
+  </data>
+  <data name="PasswordMatch" xml:space="preserve">
+    <value>Passwords must match</value>
+  </data>
+  <data name="PasswordUpdateText" xml:space="preserve">
+    <value>Enter your current password and choose a new password.</value>
+  </data>
+  <data name="PlayerCulled" xml:space="preserve">
+    <value>Player culled</value>
+  </data>
+  <data name="PurchasesTitle" xml:space="preserve">
+    <value>my purchases</value>
+  </data>
+  <data name="RegisterButton" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ResendEmailFailed" xml:space="preserve">
+    <value>Resend email failed</value>
+  </data>
+  <data name="ResendEmailMessage" xml:space="preserve">
+    <value>Resending Activation Email</value>
+  </data>
+  <data name="ResendPin" xml:space="preserve">
+    <value>If you want us to re-email your activation pin to your registered email address, please click the button below.</value>
+  </data>
+  <data name="ResendPinButton" xml:space="preserve">
+    <value>Resend activation Pin</value>
+  </data>
+  <data name="ResetMyPasswordLink" xml:space="preserve">
+    <value>Reset my password</value>
+  </data>
+  <data name="ROTWAbriviation" xml:space="preserve">
+    <value>ROTW</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>save changes</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="ShowAllApis" xml:space="preserve">
+    <value>show all</value>
+  </data>
+  <data name="ShowApisNeeded" xml:space="preserve">
+    <value>show where apis are needed</value>
+  </data>
+  <data name="TransactionUpdate" xml:space="preserve">
+    <value>When you have completed your transaction, your account will be credited with new votes within a few minutes. Press the back button below to go back to the main page.</value>
+  </data>
+  <data name="UpdateAccountFailed" xml:space="preserve">
+    <value>Update Account Failed</value>
+  </data>
+  <data name="UpdateAccountSuccess" xml:space="preserve">
+    <value>Your account was successfully updated</value>
+  </data>
+  <data name="UpdatesTitle" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="UpdatingAccount" xml:space="preserve">
+    <value>Updating Account</value>
+  </data>
+  <data name="VotesTitle" xml:space="preserve">
+    <value>my votes</value>
+  </data>
+  <data name="AccountValidated" xml:space="preserve">
+    <value>Your account is validated</value>
+  </data>
+  <data name="ActivatePageTitle" xml:space="preserve">
+    <value>Activate Account</value>
+  </data>
+  <data name="AppBarActivate" xml:space="preserve">
+    <value>activate</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CastVoteButton" xml:space="preserve">
+    <value>Cast Vote</value>
+  </data>
+  <data name="HelpChoosePlayer" xml:space="preserve">
+    <value>Choose a Player</value>
+  </data>
+  <data name="HelpChoosePlayerText" xml:space="preserve">
+    <value>Scroll through all the players available for this position and choose one.</value>
+  </data>
+  <data name="HelpNavigation" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="HelpNavigationText" xml:space="preserve">
+    <value>Swipe the home screen to see other pitch views</value>
+  </data>
+  <data name="HelpNewGame" xml:space="preserve">
+    <value>Make Another Game</value>
+  </data>
+  <data name="HelpNewGameText" xml:space="preserve">
+    <value>You can make another game by simply buying some more votes.</value>
+  </data>
+  <data name="HelpPosition" xml:space="preserve">
+    <value>Pick a position</value>
+  </data>
+  <data name="HelpPositionText" xml:space="preserve">
+    <value>Start filling all the players on the pitch by clicking a position</value>
+  </data>
+  <data name="HelpSubmit" xml:space="preserve">
+    <value>Submit your Game</value>
+  </data>
+  <data name="HelpSubmitText" xml:space="preserve">
+    <value>When you have picked your 30 (subs too) then submit your Game.</value>
+  </data>
+  <data name="HelpTitle" xml:space="preserve">
+    <value>Pick the Greatest team</value>
+  </data>
+  <data name="HelpVoteForBest" xml:space="preserve">
+    <value>Vote for the best players in each position for both Europe and the Rest of the World.</value>
+  </data>
+  <data name="MoveSliderVoteText" xml:space="preserve">
+    <value>Move the slider if you want to cast more than 1 vote:</value>
+  </data>
+  <data name="NoName" xml:space="preserve">
+    <value>no name</value>
+  </data>
+  <data name="PlayerMoveSynced" xml:space="preserve">
+    <value>Player moving values have been synced</value>
+  </data>
+  <data name="PlayerVoteText" xml:space="preserve">
+    <value>You are about to vote for the following player</value>
+  </data>
+  <data name="PositionSelectVote" xml:space="preserve">
+    <value>Please select a position for this player:</value>
+  </data>
+  <data name="PositionVoteText" xml:space="preserve">
+    <value>For the following position:</value>
+  </data>
+  <data name="TransactionSynced" xml:space="preserve">
+    <value>Your transactions have been synced</value>
+  </data>
+  <data name="VoteConfirmTitle" xml:space="preserve">
+    <value>Vote Confirm</value>
+  </data>
+  <data name="VotesSynced" xml:space="preserve">
+    <value>Your votes have been synced</value>
+  </data>
+  <data name="FAQButton" xml:space="preserve">
+    <value>Click for FAQs</value>
+  </data>
+  <data name="FAQPageTitle" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="AppBarLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Please select your language</value>
+  </data>
+  <data name="FreeEntry" xml:space="preserve">
+    <value>Free Entry</value>
+  </data>
+  <data name="FavouritePlayerPage" xml:space="preserve">
+    <value>Favourite Player</value>
+  </data>
+  <data name="FavouriteLeaguePage" xml:space="preserve">
+    <value>Favourite League</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="FavouriteSportPage" xml:space="preserve">
+    <value>Favourite Sport</value>
+  </data>
+  <data name="FavouriteStadiumPage" xml:space="preserve">
+    <value>Favourite Stadium</value>
+  </data>
+  <data name="Submitting" xml:space="preserve">
+    <value>Submitting</value>
+  </data>
+  <data name="DoYouPlayFootball" xml:space="preserve">
+    <value>Do you play football?</value>
+  </data>
+  <data name="FavouriteLeague" xml:space="preserve">
+    <value>Which is your favourite major league to watch?</value>
+  </data>
+  <data name="FavouriteLeagueWatermark" xml:space="preserve">
+    <value>Please select your favourite major league</value>
+  </data>
+  <data name="FavouritePlayer" xml:space="preserve">
+    <value>Who is your favourite player from the FAS 1100 list?</value>
+  </data>
+  <data name="FavouritePlayerWatermark" xml:space="preserve">
+    <value>Please select your favourite player</value>
+  </data>
+  <data name="FavouriteSport" xml:space="preserve">
+    <value>Other than football, what is your favourite sport?</value>
+  </data>
+  <data name="FavouriteSportWatermark" xml:space="preserve">
+    <value>Please select your other favourite sport</value>
+  </data>
+  <data name="FavouriteStadium" xml:space="preserve">
+    <value>What is your favourite football stadium in the world?</value>
+  </data>
+  <data name="FavouriteStadiumWatermark" xml:space="preserve">
+    <value>Please select your favourite stadium</value>
+  </data>
+  <data name="FAQ1" xml:space="preserve">
+    <value>What is the Fans All Star Global Vote?</value>
+  </data>
+  <data name="FAQ2" xml:space="preserve">
+    <value>Registered participants in the Fans All Star Global Vote 2013 will be able to select their favourite European and Rest of the World  squads (two starting elevens plus 4 substitutes on each squad making a total of 30 players). All participants who register in the Fans All Star Global Vote 2013 will also be automatically entered into a free prize draw. Entry into the Fans All Star Global Vote is free. See below for further details.</value>
+  </data>
+  <data name="FAQ3" xml:space="preserve">
+    <value>What is the Fans All Star Prize Competition 2013?</value>
+  </data>
+  <data name="FAQ4" xml:space="preserve">
+    <value>Registered participants in the Fans All Star Global Vote 2013 will also have the opportunity to enter our prize competition which requires participants to select their a European and a Rest of the World  squads (two starting elevens plus 4 substitutes on each squad making a total of 30 players) that they think our panel of experts will determine to be the best 15-man European squad and the 15-man Rest of the World squad. There is a paid for entry route and free entry route into the competition. See below for further details.</value>
+  </data>
+  <data name="FAQ5" xml:space="preserve">
+    <value>How many players can I choose from?</value>
+  </data>
+  <data name="FAQ6" xml:space="preserve">
+    <value>Participants will select their players from a shortlist of 1,100 players (550 from Europe and 550 from the Rest Of The World) from 265 different clubs, 93 countries and 55 leagues around the world.</value>
+  </data>
+  <data name="FAQ7" xml:space="preserve">
+    <value>The 550 players for each squad are made up by 50 goalkeepers, 50 right backs, 50 left backs, 100 centre backs, 200 midfielders and 100 forwards.</value>
+  </data>
+  <data name="FAQ8" xml:space="preserve">
+    <value>What formations can I choose? </value>
+  </data>
+  <data name="FAQ9" xml:space="preserve">
+    <value>The formation is set at a standard 4-4-2 only.</value>
+  </data>
+  <data name="FAQ10" xml:space="preserve">
+    <value>How did you select the initial shortlist of 1,100 players?</value>
+  </data>
+  <data name="FAQ11" xml:space="preserve">
+    <value>FAS’ panel of football experts have selected 1,100 of the best players from Europe and the Rest of the World.</value>
+  </data>
+  <data name="FAQ12" xml:space="preserve">
+    <value>Who can participate?</value>
+  </data>
+  <data name="FAQ13" xml:space="preserve">
+    <value>Anyone in the world who has either downloaded the Fans All Star application or registered at www.fansallstar.com. If you are aged under eighteen (18) you will need to obtain the consent of your parent or guardian.</value>
+  </data>
+  <data name="FAQ14" xml:space="preserve">
+    <value>Can I have more than one login?</value>
+  </data>
+  <data name="FAQ15" xml:space="preserve">
+    <value>No. Only one login is allowed per participant.</value>
+  </data>
+  <data name="FAQ16" xml:space="preserve">
+    <value>How did you decide the position where a player is allocated if he plays in many different positions for his club?</value>
+  </data>
+  <data name="FAQ17" xml:space="preserve">
+    <value>In case of conflict, the FAS panel of football experts have selected player positions based on a number of factors including a) most frequent position for his club and b) the player’s favourite position. Current default position for any single player in the 1,100 player shortlist is final and will not be subject to change under any circumstances.</value>
+  </data>
+  <data name="FAQ18" xml:space="preserve">
+    <value>What if a Rest of the World player acquires a European nationality or vice versa? </value>
+  </data>
+  <data name="FAQ19" xml:space="preserve">
+    <value>Players are assigned a nationality based on the nation they are eligible to represent. In the case of a player with dual nationality and no international caps, he will be assigned his nationality of birth.</value>
+  </data>
+  <data name="FAQ20" xml:space="preserve">
+    <value>FANS ALL STAR GLOBAL VOTE</value>
+  </data>
+  <data name="FAQ21" xml:space="preserve">
+    <value>How are the final squads selected for the Fans All Stars Global Vote?</value>
+  </data>
+  <data name="FAQ22" xml:space="preserve">
+    <value>The final squads of 15 will comprise those players that have received the highest amount of votes in each position. </value>
+  </data>
+  <data name="FAQ23" xml:space="preserve">
+    <value>The first eleven for both squads will be:-</value>
+  </data>
+  <data name="FAQ24" xml:space="preserve">
+    <value>The goalkeeper with the highest amount of votes</value>
+  </data>
+  <data name="FAQ25" xml:space="preserve">
+    <value>The right back with the highest amount of votes</value>
+  </data>
+  <data name="FAQ26" xml:space="preserve">
+    <value>The left back with the highest amount of votes</value>
+  </data>
+  <data name="FAQ27" xml:space="preserve">
+    <value>The two centre backs with the 
+highest amount of votes</value>
+  </data>
+  <data name="FAQ28" xml:space="preserve">
+    <value>The four midfielders with the 
+highest amount of votes</value>
+  </data>
+  <data name="FAQ29" xml:space="preserve">
+    <value>The two forwards with the highest amount of votes</value>
+  </data>
+  <data name="FAQ30" xml:space="preserve">
+    <value>The substitutes for both squads will be</value>
+  </data>
+  <data name="FAQ31" xml:space="preserve">
+    <value>The goalkeeper with the second 
+highest amount of votes</value>
+  </data>
+  <data name="FAQ32" xml:space="preserve">
+    <value>The centre back with the third 
+highest amount of votes</value>
+  </data>
+  <data name="FAQ33" xml:space="preserve">
+    <value>The midfielder with the fifth 
+highest amount of votes</value>
+  </data>
+  <data name="FAQ34" xml:space="preserve">
+    <value>The forward with the third highest amount of votes</value>
+  </data>
+  <data name="FAQ35" xml:space="preserve">
+    <value>Please see the Terms &amp; Conditions for further details.</value>
+  </data>
+  <data name="FAQ36" xml:space="preserve">
+    <value>What is the voting period?</value>
+  </data>
+  <data name="FAQ37" xml:space="preserve">
+    <value>Voting starts at 23.59 BST on Friday 7 June 2013 and closes on Saturday 31 August 2013 at 23.59 BST. Voting will be divided into 3 voting periods:</value>
+  </data>
+  <data name="FAQ38" xml:space="preserve">
+    <value>First Voting Period - commences at 23.59 BST on Friday 7 June 2013 and closes at 23.59 BST on Sunday 30 June 2013</value>
+  </data>
+  <data name="FAQ39" xml:space="preserve">
+    <value>Second Voting Period - commences at 00.01 BST on Monday 1 July 2013 and closes at 23.59 BST on Wednesday 31 July 2013</value>
+  </data>
+  <data name="FAQ40" xml:space="preserve">
+    <value>Third Voting Period - commences at 00.01 BST on Thursday 1 August 2013 and closes at 23.59 BST on Saturday 31 August 2013</value>
+  </data>
+  <data name="FAQ41" xml:space="preserve">
+    <value>How can I register and submit my squads? </value>
+  </data>
+  <data name="FAQ42" xml:space="preserve">
+    <value>You can register and vote online at www.fansallstar.com, via the FAS app or on our Facebook page and submit your free European and ROTW squads. </value>
+  </data>
+  <data name="FAQ43" xml:space="preserve">
+    <value>Are there any elimination rounds removing players from this shortlist during the duration of the global vote? </value>
+  </data>
+  <data name="FAQ44" xml:space="preserve">
+    <value>There will also be two elimination rounds reducing the list of players available to vote for:</value>
+  </data>
+  <data name="FAQ45" xml:space="preserve">
+    <value>after the First Voting Period the list of players will be reduced from 1,100 players to the 660 players who received the highest votes between  (330 Europe and 330 ROTW comprising of the 60 goalkeepers, 60 right backs, 60 left backs, 120 centre backs, 240 midfielders and 120 forwards); and </value>
+  </data>
+  <data name="FAQ46" xml:space="preserve">
+    <value>after the Second Voting Period the list of players will be reduced from 660 players to the 110 players who received the highest votes between  (55 Europe and 55 ROTW comprising of the 10 goalkeepers, 10 right backs, 10 left backs, 20  centre backs, 40 midfielders and 20 forwards).</value>
+  </data>
+  <data name="FAQ47" xml:space="preserve">
+    <value>The final squad selections will be announced on 3 September 2013.</value>
+  </data>
+  <data name="FAQ48" xml:space="preserve">
+    <value>Will any new players be added to this shortlist during the duration of the Fans All Star Global Vote 2013? </value>
+  </data>
+  <data name="FAQ49" xml:space="preserve">
+    <value>No players will be added to this shortlist during the Fans All Star Global Vote 2013. </value>
+  </data>
+  <data name="FAQ50" xml:space="preserve">
+    <value>Are there any selection limitations? </value>
+  </data>
+  <data name="FAQ51" xml:space="preserve">
+    <value>There are no country, league or team limitations. Voters are free to select any player from the shortlists during each of the Voting Periods. Please note that players will be reduced in each of the second and third voting rounds.</value>
+  </data>
+  <data name="FAQ52" xml:space="preserve">
+    <value>How many times can I vote?</value>
+  </data>
+  <data name="FAQ53" xml:space="preserve">
+    <value>As a registered participant, you can only vote once. </value>
+  </data>
+  <data name="FAQ54" xml:space="preserve">
+    <value>Are the voting stats updated?</value>
+  </data>
+  <data name="FAQ55" xml:space="preserve">
+    <value>FAS may in its sole discretion display the absolute total number of registered votes but no specific data will be provided for single players.</value>
+  </data>
+  <data name="FAQ56" xml:space="preserve">
+    <value>Do I always have to submit one or two full squads?</value>
+  </data>
+  <data name="FAQ58" xml:space="preserve">
+    <value>Are there any prizes?</value>
+  </data>
+  <data name="FAQ59" xml:space="preserve">
+    <value>Yes. By submitting a valid vote, you will automatically be entered into the Free Prize Draw. The Free Prize Draw will be divided into three 3 periods with a total of 10 framed football shirts signed by current and past football legends (please see Terms &amp; Conditions for more details).</value>
+  </data>
+  <data name="FAQ60" xml:space="preserve">
+    <value>FANS ALL STAR PRIZE COMPETITION</value>
+  </data>
+  <data name="FAQ61" xml:space="preserve">
+    <value>What is the winning prize?</value>
+  </data>
+  <data name="FAQ62" xml:space="preserve">
+    <value>A cash prize of £50,000 will be paid to the winner.</value>
+  </data>
+  <data name="FAQ63" xml:space="preserve">
+    <value>How will the winner be chosen?</value>
+  </data>
+  <data name="FAQ64" xml:space="preserve">
+    <value>The winner will be the entrant that correctly predicts both the 15-man European squad and the 15-man Rest of the World squad chosen by a panel of international football experts.  If more than one participant correctly predicts both squads then one winner will be selected by an independently adjudicated random selection after the end of the Promotion Period. The Cash prize is only available to Adults aged 18+.</value>
+  </data>
+  <data name="FAQ65" xml:space="preserve">
+    <value>What is the entry period?</value>
+  </data>
+  <data name="FAQ66" xml:space="preserve">
+    <value>The prize competition opens at 23.59 BST on Friday 7 June 2013 and closes on Saturday 31 August 2013 at 23.59 BST.</value>
+  </data>
+  <data name="FAQ67" xml:space="preserve">
+    <value>How many times can I enter?</value>
+  </data>
+  <data name="FAQ68" xml:space="preserve">
+    <value>As a registered participant, you can enter as many times as you wish using your account. You can either enter for Free by completing a short questionnaire or you can pay to enter. Entries are priced in bundles of 30 votes (required to submit two squads in each entry) at a cost of US$1.00 (one US dollar).</value>
+  </data>
+  <data name="FAQ69" xml:space="preserve">
+    <value>Do I always have to submit one or two full squads?</value>
+  </data>
+  <data name="FAQ70" xml:space="preserve">
+    <value>Participants must submit two full squads in each entry. Participants can submit a maximum of 30 entries per person.</value>
+  </data>
+  <data name="FAQ71" xml:space="preserve">
+    <value>How can I enter and submit my squads? </value>
+  </data>
+  <data name="FAQ72" xml:space="preserve">
+    <value>You can enter via your fans all star account online at www.fansallstar.com, via the FAS app or Facebook and submit your free European and ROTW squads.</value>
+  </data>
+  <data name="FAQ73" xml:space="preserve">
+    <value>Are there any elimination rounds removing players from this shortlist during the duration of the global vote? </value>
+  </data>
+  <data name="FAQ74" xml:space="preserve">
+    <value>No. You can choose from the full shortlist of 1100 players referenced above.</value>
+  </data>
+  <data name="FAQ75" xml:space="preserve">
+    <value>No. The aim of the game is to correctly predict the two squads for Europe and the Rest of the World with the highest votes by position. Being injured does not disqualify a player from being chosen in the final squad.  </value>
+  </data>
+  <data name="FAQ76" xml:space="preserve">
+    <value>Will any new players be added to this shortlist during the duration of the competition? </value>
+  </data>
+  <data name="FAQ77" xml:space="preserve">
+    <value>No players will be added to this shortlist during the competition.</value>
+  </data>
+  <data name="FAQ78" xml:space="preserve">
+    <value>Are there any selection limitations? </value>
+  </data>
+  <data name="FAQ79" xml:space="preserve">
+    <value>There are no country, league or team limitations. Entrants are free to select any player from the shortlist.</value>
+  </data>
+  <data name="FAQ80" xml:space="preserve">
+    <value>What online payment system do you use? Is it secure?</value>
+  </data>
+  <data name="FAQ81" xml:space="preserve">
+    <value>Any payment made online will be made through the Paypal payment system to guarantee your security or other payment providers. Please visit www.paypal.com for more information. Please note that currency exchange rates may vary from provider to provider.  For further information, please check with your provider.</value>
+  </data>
+  <data name="FAQ57" xml:space="preserve">
+    <value>Participants must submit two squads.</value>
+  </data>
+</root>

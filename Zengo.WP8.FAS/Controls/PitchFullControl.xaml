@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.PitchFullControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="800" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="550" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Canvas Name="CanvasFullPitch" Grid.Row="0">
+
+            <Canvas.Background>
+				<ImageBrush ImageSource="../Images/FullPitch.png" Stretch="None"/>
+            </Canvas.Background>
+
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeGoalkeper" PositionKey="GK" IsEurope="True" Canvas.Top="-4" Canvas.Left="210" />
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeRightBack" PositionKey="RB" IsEurope="True" Canvas.Top="65" Canvas.Left="61" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeRightCenterDefence" PositionKey="RCB" IsEurope="True" Canvas.Left="150" Canvas.Top="65" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeLeftCenterBack" PositionKey="LCB" IsEurope="True" Canvas.Left="270" Canvas.Top="65" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeLeftBack" PositionKey="LB" IsEurope="True" Canvas.Left="360" Canvas.Top="65" />
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeRightMidfield" PositionKey="RM" IsEurope="True" Canvas.Left="61" Canvas.Top="136" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeRightCenterMidfield" PositionKey="RCM" IsEurope="True" Canvas.Left="150" Canvas.Top="136" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeLeftCenterMidfield" PositionKey="LCM" IsEurope="True" Canvas.Left="270" Canvas.Top="136" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeLeftMidfield" PositionKey="LM" IsEurope="True" Canvas.Left="360" Canvas.Top="136" />
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeRightForward" PositionKey="RF" IsEurope="True" Canvas.Left="134" Canvas.Top="203" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerEuropeLeftForward" PositionKey="LF" IsEurope="True" Canvas.Left="285" Canvas.Top="203" />
+
+
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwLeftForward" PositionKey="LF" IsEurope="False" Canvas.Left="134" Canvas.Top="270" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwRightForward" PositionKey="RF" IsEurope="False" Canvas.Left="285" Canvas.Top="270" />
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwLeftMidfield" PositionKey="LM" IsEurope="False" Canvas.Left="61" Canvas.Top="340" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwLeftCenterMidfield" PositionKey="LCM" IsEurope="False" Canvas.Left="150" Canvas.Top="340" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwRightCenterMidfield" PositionKey="RCM" IsEurope="False" Canvas.Left="270" Canvas.Top="340" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwRightMidfield" PositionKey="RM" IsEurope="False" Canvas.Left="360" Canvas.Top="340" />
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwLeftBack" PositionKey="LB" IsEurope="False" Canvas.Left="61" Canvas.Top="415" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwLeftCenterBack" PositionKey="LCB" IsEurope="False" Canvas.Left="150" Canvas.Top="415" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwRightCenterBack" PositionKey="RCB" IsEurope="False" Canvas.Left="270" Canvas.Top="415" />
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwRightBack" PositionKey="RB" IsEurope="False" Canvas.Left="360" Canvas.Top="415" />
+
+            <customcontrols:PlayerSmallIconControl Name="PlayerRotwGoalkeper" PositionKey="GK" IsEurope="False" Canvas.Left="210" Canvas.Top="480" />
+
+
+
+        </Canvas>
+
+        <Canvas Name="CanvasText" Grid.Row="0">
+            <TextBlock Canvas.Left="66" TextWrapping="Wrap" Text="{Binding LocalizedResources.EuropeAbriviation, Source={StaticResource LocalizedStrings}}" FontSize="24" Canvas.Top="-2" Foreground="{StaticResource StandardTextColour}"/>
+            <TextBlock Canvas.Left="362" TextWrapping="Wrap" Text="{Binding LocalizedResources.ROTWAbriviation, Source={StaticResource LocalizedStrings}}" FontSize="24" Canvas.Top="514" Foreground="{StaticResource StandardTextColour}"/>
+        </Canvas>
+
+    </Grid>
+</UserControl>

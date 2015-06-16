@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.SearchBoxFeedbackControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Border Name="RowFeedback" Background="Black" Visibility="Collapsed" Width="458">
+
+        <Canvas Name="InnerFeedbackCanvas">
+            <TextBlock
+                							x:Name="TextBlockFoundResults"
+                							Height="30"
+                							Text="Found x results for:"
+                							VerticalAlignment="Center"
+											HorizontalAlignment="Left"
+                							TextAlignment="Center"
+                							TextWrapping="Wrap"
+                							Foreground="{StaticResource StandardTextColour}" Canvas.Left="7" Canvas.Top="6"
+											/>
+
+
+            <TextBlock
+									x:Name="TextBlockSearchTerm"
+									Height="30"
+									Text="man"
+									VerticalAlignment="Center"
+									HorizontalAlignment="Left"
+									TextAlignment="Center"
+									TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="30" FontSize="26"
+											>
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="#FFE00A0A"/>
+                </TextBlock.Foreground>
+
+            </TextBlock>
+
+            <HyperlinkButton Name="HyperlinkClearSearch" Content="{Binding LocalizedResources.ClearSearch, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="316" Canvas.Top="20" Click="HyperlinkClearSearch_Click" Foreground="{StaticResource StandardTextColour}"/>
+
+        </Canvas>
+
+    </Border>
+    
+</UserControl>

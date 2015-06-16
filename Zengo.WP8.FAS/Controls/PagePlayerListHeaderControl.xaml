@@ -1,0 +1,41 @@
+﻿<UserControl 
+    x:Class="Zengo.WP8.FAS.Controls.PagePlayerListHeaderControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="116" d:DesignWidth="468">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+        <StackPanel Margin="12,17,0,10" >
+            <!--The progress bar-->
+            <!--<ProgressBar x:Name="progressBar"
+                     IsIndeterminate="True"
+                     HorizontalAlignment="Center"
+                     Height="20"
+                     Width="400" 
+                     Foreground="White" 
+                     d:LayoutOverrides="HorizontalAlignment" 
+                     Margin="0,1,0,-26" />-->
+
+            <TextBlock x:Name="TextboxPageTitle" Text="title" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource StandardTextColour}"/>
+
+            <TextBlock x:Name="TextboxPageName" Text="Players" Margin="9,-7,0,0" FontSize="50" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource StandardTextColour}"/>
+           
+            
+        </StackPanel>
+
+		<TextBlock x:Name="TextboxSearchByHeading" Text="listing by country" Style="{StaticResource PhoneTextNormalStyle}" Margin="234,15,-34,68" Foreground="{StaticResource StandardTextColour}"/>
+        <TextBlock x:Name="TextboxSearchByCriteria" Text="England" Style="{StaticResource PhoneTextNormalStyle}" Margin="234,41,-34,42" Foreground="{StaticResource TextBoxBorderBrush}"/>
+		<TextBlock x:Name="TextboxSearchByFrom" Text="from:" Style="{StaticResource PhoneTextNormalStyle}" Margin="234,66,-34,17" Foreground="{StaticResource StandardTextColour}" />
+        <TextBlock x:Name="TextboxSearchByEurope" Text="Europe" Style="{StaticResource PhoneTextNormalStyle}" Margin="283,66,-83,17" Foreground="{StaticResource TextBoxBorderBrush}"/>
+		
+
+    </Grid>
+
+</UserControl>

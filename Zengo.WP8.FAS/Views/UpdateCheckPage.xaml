@@ -1,0 +1,121 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkitPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    x:Class="Zengo.WP8.FAS.UpdateCheckPage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <UserControl.Resources>
+
+        <!-- The template for each club -->
+        <DataTemplate x:Key="updateTemplate" >
+
+            <Grid x:Name="UpdateCheck" Grid.Row="1" Height="140" Margin="12,0,12,0" Background="Transparent" 
+                                    ManipulationStarted="UpdateCheckPage_ManipulationStarted_1" 
+                                     ManipulationCompleted="UpdateCheckPage_ManipulationCompleted_1">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock 
+				    Grid.Row="0" 
+				    TextWrapping="NoWrap" 
+				    Text="{Binding Type, StringFormat='type: {0}'}"
+                    Foreground="White" 
+					VerticalAlignment="Center" 
+					HorizontalAlignment="Left" Margin="10,0,320,73" 
+				    />
+
+                <TextBlock 
+					Grid.Row="0" 
+					TextWrapping="NoWrap" 
+					Text="{Binding DateTime, StringFormat='dd-MMM-yy HH:mm:ss'}"
+					Foreground="#FFF5D50C" 
+					VerticalAlignment="Center" Width="305" HorizontalAlignment="Left" Margin="10,32,0,41" 
+				    />
+
+                <TextBlock 
+					Grid.Row="0" 
+					TextWrapping="NoWrap" 
+					Text="{Binding Status, StringFormat='status: {0}'}"
+					Foreground="#FF0CF58B" 
+					VerticalAlignment="Center" 
+					HorizontalAlignment="Right" Margin="0,0,9,73" 
+				    />
+
+                <TextBlock 
+					Grid.Row="0" 
+					TextWrapping="NoWrap" 
+					Text="{Binding ApiCountNeeded, StringFormat='apis needed: {0}'}"
+					Foreground="#FF0CF58B" 
+					VerticalAlignment="Center" 
+					HorizontalAlignment="Left" Margin="10,64,220,9" 
+				    />
+                
+                <TextBlock 
+                	Grid.Row="0" 
+                	TextWrapping="NoWrap" 
+                	Text="{Binding Updates.Count, StringFormat='apis received: {0}'}"
+                	Foreground="#FF0CF58B" 
+                	VerticalAlignment="Center" 
+                	HorizontalAlignment="Left" Margin="10,96,0,-23" 
+				    />
+
+                <TextBlock 
+					Grid.Row="0" 
+					TextWrapping="NoWrap" 
+                	Text="{Binding AppliedSuccessfully, StringFormat='applied to db: {0}'}"
+					Foreground="Yellow" 
+					HorizontalAlignment="Right"
+                    Margin="0,60,0,0" 
+				    />
+
+            </Grid>
+
+        </DataTemplate>
+
+    </UserControl.Resources>
+    
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="520"/>
+        </Grid.RowDefinitions>
+
+        <!--The header control-->
+        <customcontrols:PageSingleHeaderControl Name="PageHeaderControl" Grid.Row="0" />
+
+        <!--The text at the bottom-->
+        <Border Background="Gray" Grid.Row="1">
+            <TextBlock Name="TextLastSuccessfulUpdate" Text="" TextWrapping="Wrap" Margin="30,0,35,0" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        </Border>
+
+        <!--The list-->
+        <toolkit:LongListSelector x:Name="UpdatesList"
+                                          ItemTemplate="{StaticResource updateTemplate}" 
+                                          Background="Transparent"
+                                          Grid.Row="2" 
+                                           >
+        </toolkit:LongListSelector>
+
+    </Grid>
+    
+</phone:PhoneApplicationPage>

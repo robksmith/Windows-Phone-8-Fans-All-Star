@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.LongListZonesControl"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns:listcontrols="clr-namespace:Zengo.WP8.FAS.Controls.ListItems;assembly=Zengo.WP8.FAS"             
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <UserControl.Resources>
+
+        <!-- The template for each club -->
+        <DataTemplate x:Key="zonesItemTemplate" >
+
+            <listcontrols:ZoneItem x:Name="CountryItemViewOnPage" Background="Blue" />
+
+        </DataTemplate>
+
+    </UserControl.Resources>
+
+
+    <Grid x:Name="LayoutRoot" >
+
+        <toolkit:LongListSelector x:Name="zonesLongList"
+                                          ItemTemplate="{StaticResource zonesItemTemplate}" 
+                                          Background="Transparent"
+                                           >
+
+            <toolkit:LongListSelector.GroupItemsPanel>
+                <ItemsPanelTemplate>
+                    <toolkit:WrapPanel/>
+                </ItemsPanelTemplate>
+            </toolkit:LongListSelector.GroupItemsPanel>
+
+        </toolkit:LongListSelector>
+
+    </Grid>
+
+</UserControl>

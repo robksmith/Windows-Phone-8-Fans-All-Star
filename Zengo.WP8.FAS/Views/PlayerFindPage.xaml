@@ -1,0 +1,114 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Zengo.WP8.FAS.PlayerFindPage"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+        <controls:Pivot Name="PivotControl" Title="Find a player" Grid.Row="1" Foreground="{StaticResource StandardTextColour}">
+            
+            <controls:PivotItem Name="PlayersPivot">
+                <controls:PivotItem.Header>
+                    
+                    <customcontrols:PagePivotHeaderControl x:Name="ByName" />
+
+                </controls:PivotItem.Header>
+                
+                <Grid Name="GridPlayers">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0"/>
+                    </Grid.RowDefinitions>
+
+                    <!--The search box-->
+                    <customcontrols:SearchBoxControl x:Name="SearchBox" Grid.Row="0" Height="Auto" />
+
+                    <!--long list of players-->
+                    <customcontrols:LongListPlayersControl x:Name="PlayersList" Grid.Row="1" Height="Auto" ForFreeEntryPage="False"/>
+
+                    <!--the feedback at the bottom-->
+                    <customcontrols:SearchBoxFeedbackControl x:Name="SearchBoxFeedback" Grid.Row="2" Height="Auto" />
+                    
+                </Grid>
+                
+            </controls:PivotItem>
+
+            <controls:PivotItem Name="ClubPivot">
+
+                <controls:PivotItem.Header>
+                    
+                    <customcontrols:PagePivotHeaderControl x:Name="ByClub" />
+
+                </controls:PivotItem.Header>
+                
+                <Grid Name="GridClubs">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!--long list of clubs-->
+                    <customcontrols:LongListClubsControl x:Name="ClubsList" Grid.Row="1" Height="Auto" ForAccountPage="False" />
+
+                </Grid>                
+            </controls:PivotItem>
+
+            <controls:PivotItem Name="CountriesPivot">
+                <controls:PivotItem.Header>
+
+                    <customcontrols:PagePivotHeaderControl x:Name="ByCountry" />
+
+                </controls:PivotItem.Header>
+                
+                <customcontrols:LongListCountriesControl x:Name="CountriesList" Height="Auto" ForAccountPage="False"/>
+            </controls:PivotItem>
+
+
+            <controls:PivotItem Name="ZonesPivot">
+                <controls:PivotItem.Header>
+
+                    <customcontrols:PagePivotHeaderControl x:Name="ByPosition" />
+
+                </controls:PivotItem.Header>
+
+                <customcontrols:LongListZonesControl x:Name="ZonesList" Height="Auto"/>
+            </controls:PivotItem>
+            
+        </controls:Pivot>
+
+    </Grid>
+
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton IconUri="/Images/AppBar/search.png" Text="search" Click="AppBarButtonSearch_Click" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+</phone:PhoneApplicationPage>

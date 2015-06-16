@@ -1,0 +1,129 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Zengo.WP8.FAS.WelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/background.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--The header control-->
+        <customcontrols:PageSingleHeaderControl Name="PageHeaderControl" Grid.Row="0"  PageTitle="Fans All Star" PageName="Welcome" />
+
+		<TextBlock HorizontalAlignment="Left" Margin="27,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" FontSize="18.667" Grid.RowSpan="2" Height="553" TextAlignment="Center">
+			<Run FontWeight="Bold" Text="Football Fans Worldwide ">
+				<Run.Foreground>
+					<SolidColorBrush Color="#FFA17824">
+						<SolidColorBrush.RelativeTransform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.RelativeTransform>
+						<SolidColorBrush.Transform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.Transform>
+					</SolidColorBrush>
+				</Run.Foreground>
+			</Run>
+			<Run Text="- "/>
+			<Run Text="now is your chance to create football history."/>
+			<LineBreak/>
+			<Run/>
+			<LineBreak/>
+			<Run Text="By voting for the footballers you most want to see compete in the first ever "/>
+			<Run FontWeight="Bold" FontSize="21.333" Text="Fans All Star match: Europe versus the Rest of the World.">
+				<Run.Foreground>
+					<SolidColorBrush Color="#FFA17824">
+						<SolidColorBrush.RelativeTransform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.RelativeTransform>
+						<SolidColorBrush.Transform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.Transform>
+					</SolidColorBrush>
+				</Run.Foreground>
+			</Run>
+			<LineBreak/>
+			<Run/>
+			<LineBreak/>
+			<Run FontWeight="Bold" FontSize="21.333" Text="Pele and David Beckham,">
+				<Run.Foreground>
+					<SolidColorBrush Color="#FFA17824">
+						<SolidColorBrush.RelativeTransform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.RelativeTransform>
+						<SolidColorBrush.Transform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.Transform>
+					</SolidColorBrush>
+				</Run.Foreground>
+			</Run>
+			<Run Text=" global Ambassadors for Fans All Star have already shortlisted an elite worldwide pool of 1100 Players and 70 Coaches from 98 countries, 286 Clubs and 58 different leagues."/>
+			<LineBreak/>
+			<LineBreak/>
+			<Run Text="Now it is your turn to select the ultimate 15-man squads and their coaches to represent Europe against the Rest of the World on "/>
+			<Run FontWeight="Bold" FontSize="21.333" Text="Tuesday 9th July 2013">
+				<Run.Foreground>
+					<SolidColorBrush Color="#FFA17824">
+						<SolidColorBrush.RelativeTransform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.RelativeTransform>
+						<SolidColorBrush.Transform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.Transform>
+					</SolidColorBrush>
+				</Run.Foreground>
+			</Run>
+			<Run Text=" at the 65,000 capacity "/>
+			<Run FontWeight="Bold" FontSize="21.333" Text="Estadio da Luz, Lisbon">
+				<Run.Foreground>
+					<SolidColorBrush Color="#FFA17824">
+						<SolidColorBrush.RelativeTransform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.RelativeTransform>
+						<SolidColorBrush.Transform>
+							<MatrixTransform Matrix="Identity"/>
+						</SolidColorBrush.Transform>
+					</SolidColorBrush>
+				</Run.Foreground>
+			</Run>
+			<Run Text=" in the first ever Fans All Star cup."/>
+			<LineBreak/>
+			<Run/>
+			<LineBreak/>
+			<Run Text="The countdown has started."/>
+			<Run Text="Now Football Fans, "/>
+			<Run Text="you can decide who should play."/>
+			<LineBreak/>
+        </TextBlock>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+
+            <Canvas Visibility="Visible" x:Name="CanvasUserFeedback" Height="390" VerticalAlignment="Bottom" >
+
+                <HyperlinkButton x:Name="ButtonGetStarted"  Content="Get Started" Canvas.Left="108" Canvas.Top="280" Click="HyperlinkButtonGetStarted_Click" FontSize="48" Foreground="{StaticResource StandardTextColour}"/>
+
+            </Canvas>
+        </Grid>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

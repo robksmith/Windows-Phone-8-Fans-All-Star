@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Moshen.WP7.FAS.Controls.ActivateControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customcontrols="clr-namespace:Moshen.WP7.FAS.Controls;assembly=Moshen.WP7.FAS"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="600" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="480" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1" />
+
+            <RowDefinition Height="80" />
+
+            <RowDefinition Height="0" />
+            <RowDefinition Height="0" />
+
+            <RowDefinition Height="40" />
+            <RowDefinition Height="60" />
+
+            <RowDefinition Height="60" />
+            <RowDefinition Height="10" />
+            
+            <RowDefinition Height="90" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+        <!--Description-->
+        <TextBlock x:Name="TextBlockDescription" Grid.Row="1" TextWrapping="Wrap" FontSize="20" Padding="10" Text="{Binding LocalizedResources.EnterPinInstruction, Source={StaticResource LocalizedStrings}}"/>
+
+        <!--Pin-->
+        <customcontrols:FieldTitleAndError Name="TitlePin" Grid.Row="4" Grid.Column="0" Title="pin" />
+        <TextBox 
+            x:Name="TextBoxPin" 
+            Grid.Row="5" 
+            Grid.Column="0"  
+            GotFocus="TextBoxPin_GotFocus" 
+            LostFocus="TextBoxPin_LostFocus" 
+            KeyUp="TextBoxPin_KeyUp"             
+            FontSize="20" 
+            Height="70" 
+            MaxLength="16" 
+            VerticalAlignment="Center" 
+            Background="#ffffffff" 
+            BorderBrush="{StaticResource TextBoxBorderBrush}"
+            />
+
+        <!--Description-->
+        <TextBlock x:Name="TextBlockResendDescription" Grid.Row="8" TextWrapping="Wrap" FontSize="20" Padding="10" Text="{Binding LocalizedResources.ResendPin, Source={StaticResource LocalizedStrings}}"/>
+        
+        <HyperlinkButton Name="HyperlinkResendPin" Grid.Row="9" FontSize="20" HorizontalAlignment="Left" Content="{Binding LocalizedResources.ResendPinButton, Source={StaticResource LocalizedStrings}}" Click="HyperlinkResendPin_Click_1"/>
+
+    </Grid>
+    
+</UserControl>

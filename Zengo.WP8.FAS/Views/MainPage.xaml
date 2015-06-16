@@ -1,0 +1,91 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Zengo.WP8.FAS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background_pitch.png"/>
+        </Grid.Background>
+
+        <!--The progress bar-->
+        <!--<ProgressBar x:Name="progressBar"
+                     IsIndeterminate="True"
+                     HorizontalAlignment="Center"
+                     Height="20"
+                     Width="480" 
+                     Foreground="White" Margin="0,0,0,676"  
+                      />-->
+        <!--<TextBlock Name="TextLoading" FontSize="15" Text="Loading" Foreground="Red" />-->
+
+
+        <!--Pivot Control-->
+        <controls:Pivot Name="MainPivot" Title="{Binding Path=LocalizedResources.ProductTitle, Source={StaticResource LocalizedStrings}}" Foreground="{StaticResource StandardTextColour}">
+            
+            <!--Europe-->
+            <controls:PivotItem Margin="0,28,0,0">
+
+                <controls:PivotItem.Header>
+
+                    <customcontrols:PagePivotHeaderControl Name="EuropePivotHeaderControl"  />
+
+                </controls:PivotItem.Header>
+
+                <customcontrols:PitchEuropeControl x:Name="PitchEurope" Height="Auto"/>
+
+            </controls:PivotItem>
+
+            <!--Rest of the world-->
+            <controls:PivotItem Margin="0,28,0,0">
+
+                <controls:PivotItem.Header>
+
+                    <customcontrols:PagePivotHeaderControl Name="EuropeROTWHeaderControl" />
+
+                </controls:PivotItem.Header>
+
+                <customcontrols:PitchRotwControl x:Name="PitchRotw" Height="Auto"/>
+
+            </controls:PivotItem>
+
+            <!--Full View-->
+            <controls:PivotItem Margin="0,28,0,0">
+
+                <controls:PivotItem.Header>
+
+                    <customcontrols:PagePivotHeaderControl Name="EuropeFullHeaderControl" />
+
+                </controls:PivotItem.Header>
+
+                <customcontrols:PitchFullControl x:Name="PitchFull" Height="Auto"/>
+
+            </controls:PivotItem>
+            
+        </controls:Pivot>
+
+        <customcontrols:FlyoutSubmitControl Name="SubmitButton" Margin="0 135 0 0"/>
+
+        <customcontrols:AskRegisterOrLoginControl x:Name="RegisterOrLoginControl" Height="Auto" Visibility="Collapsed"/>
+
+        <Grid x:Name="GridGrayedOut" Height="800" Width="480" Background="Black" Opacity="0.5" >
+        </Grid>
+        
+    </Grid>
+
+
+    
+</phone:PhoneApplicationPage>

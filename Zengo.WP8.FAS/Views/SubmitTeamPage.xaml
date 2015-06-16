@@ -1,0 +1,119 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Zengo.WP8.FAS.Views.SubmitTeamPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:viewModel="clr-namespace:Zengo.WP8.FAS.ViewModels"
+    xmlns:converters="clr-namespace:Zengo.WP8.FAS.Helpers"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" 
+    >
+
+
+
+
+    <phone:PhoneApplicationPage.Resources>
+
+        <viewModel:TeamSubmitViewModel x:Key="ViewModelDataSource"/>
+
+        <converters:BoolToVisibilityConverter x:Key="trueToVisibleConverter"  />
+
+        <!--<DataTemplate x:Key="StatTemplate">
+
+            <Grid x:Name="GridStat" Height="90" Width="470">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="{Binding Player.FirstName}" FontSize="25" TextAlignment="Center" Grid.Row="0"/>
+                <TextBlock Text="{Binding Player.LastName}" FontSize="20" TextAlignment="Center" Grid.Row="1" FontWeight="Bold"/>
+            </Grid>
+        </DataTemplate>-->
+
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/Background.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="560"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <!--The header control-->
+        <customcontrols:PageSingleHeaderControl Name="PageHeaderControl" Grid.Row="0"/>
+
+        <Canvas Grid.Row="1" Margin="0,0,0,75" Grid.RowSpan="2">
+
+            <TextBlock Name="TextblockMessage" Text="message" 
+                       HorizontalAlignment="Center" TextWrapping="Wrap"
+                       Canvas.Top="10" Width="460" Height="68" Canvas.Left="10"/>
+
+            <!--Grid with list box-->
+            <Grid Canvas.Top="70" Height="445" Width="470">
+               
+                <!--<ListBox    
+                            Width="460"
+                            HorizontalAlignment="Center"
+                            HorizontalContentAlignment="Center"
+                            Name="ListBoxPlayers"
+                            DataContext="{StaticResource ViewModelDataSource}" 
+                            ItemsSource="{Binding Players}" 
+                            ItemTemplate="{StaticResource StatTemplate}" 
+                    Margin="10,62,0,22"  
+                            />-->
+
+                <customcontrols:LongListPlayersControl 
+                    x:Name="PlayersList" 
+                    Height="Auto" 
+                    ForTeamSubmit="True"
+                    DataContext="{StaticResource ViewModelDataSource}"
+                    />
+
+            </Grid>
+            
+
+            <TextBlock Name="TextblockLoading" 
+                       Text="Submitting Team - Please wait" 
+                        Visibility="{Binding IsLoading, Converter={StaticResource trueToVisibleConverter}, ConverterParameter=TrueToVisible}"
+                        DataContext="{StaticResource ViewModelDataSource}"
+                       HorizontalAlignment="Center" 
+                       Canvas.Top="78" Width="460" Height="39" FontSize="27" TextAlignment="Center"/>
+
+            <TextBlock Name="TextblockFailure" TextWrapping="Wrap"
+                       Text="Team submission failed - please try again" 
+                        Visibility="{Binding IsSubmittedFailure, Converter={StaticResource trueToVisibleConverter}, ConverterParameter=TrueToVisible}"
+                        DataContext="{StaticResource ViewModelDataSource}"
+                       HorizontalAlignment="Center" 
+                       Foreground="Red" FontWeight="Bold"
+                       Canvas.Top="520" Width="460" Height="88" FontSize="22" TextAlignment="Center" Canvas.Left="10"/>
+
+
+            <TextBlock Name="TextblockNotEnoughPlayers" TextWrapping="Wrap"
+                       Text="Please choose a player for each 30 locations." 
+                       HorizontalAlignment="Center" 
+                       Foreground="Red" FontWeight="Bold"
+                       Canvas.Top="520" Width="460" Height="88" FontSize="20" TextAlignment="Center" Canvas.Left="10"/>
+
+        
+        </Canvas>
+
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

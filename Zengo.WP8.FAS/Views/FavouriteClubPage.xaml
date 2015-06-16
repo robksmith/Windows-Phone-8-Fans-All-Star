@@ -1,0 +1,49 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Zengo.WP8.FAS.FavouriteClubPage"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}" 
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/background.png"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+        <!--The header control-->
+        <customcontrols:PageSingleHeaderControl Name="PageHeaderControl" Grid.Row="0" />
+
+        <!--The search box-->
+        <customcontrols:SearchBoxControl x:Name="SearchBox" Grid.Row="1" Height="Auto" />
+
+        <!--the list-->
+        <Grid x:Name="ContentPanel" Margin="12,0,12,0" Grid.Row="2">
+
+            <customcontrols:LongListClubsControl x:Name="ClubsList" Height="Auto" ForAccountPage="True" />
+
+        </Grid>
+
+        <!--the feedback at the bottom-->
+        <customcontrols:SearchBoxFeedbackControl x:Name="SearchBoxFeedback" Grid.Row="3" Height="Auto" />
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

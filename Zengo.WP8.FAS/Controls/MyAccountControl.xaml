@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.MyAccountControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="800" d:DesignWidth="480" Loaded="UserControl_Loaded">
+
+    <Grid x:Name="LayoutRoot" Margin="0 0 0 100">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="480" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1" />
+
+            <RowDefinition Height="0" />
+
+            <RowDefinition Height="0" />
+            <RowDefinition Height="0" />
+
+            <RowDefinition Height="0" />
+            <RowDefinition Height="0" />
+
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60"/>
+
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+       
+        <!--First name-->
+        <customcontrols:FieldTitleAndError Name="TitleFirstName" Grid.Row="6" Grid.Column="0" Title="first name" />
+        <TextBox x:Name="TextBoxFirstName" 
+                 Grid.Row="7" 
+                 VerticalAlignment="Center" 
+                 FontSize="20"  
+                 GotFocus="TextBoxFirstName_GotFocus" 
+                 LostFocus="TextBoxFirstName_LostFocus"  
+                 KeyUp="TextBoxFirstName_KeyUp" 
+                 InputScope="PersonalGivenName" 
+                 MaxLength="32"
+                 Height="70"
+                 Text="{Binding Path=FirstName, Mode=OneWay}" 
+                 BorderBrush="{StaticResource TextBoxBorderBrush}" Background="White" />
+
+        <!--Last name-->
+        <customcontrols:FieldTitleAndError Name="TitleLastName" Grid.Row="8" Grid.Column="0" Title="last name" />
+        <TextBox x:Name="TextBoxLastName" 
+                 Grid.Row="9" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Center" 
+                 FontSize="20" 
+                 GotFocus="TextBoxLastName_GotFocus" 
+                 LostFocus="TextBoxLastName_LostFocus" 
+                 KeyUp="TextBoxLastName_KeyUp" 
+                 InputScope="PersonalSurname" 
+                 MaxLength="32"
+                 BorderBrush="{StaticResource TextBoxBorderBrush}"
+                 Text="{Binding Path=LastName, Mode=OneWay}"
+                 Height="70" Background="White"/>
+
+
+        <!--Team name-->
+        <!--<TextBlock Grid.Row="10" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="20" Padding="20">team name</TextBlock>
+        <TextBox x:Name="TextBoxTeamName" 
+                 Grid.Row="11" 
+                 VerticalAlignment="Center" 
+                 FontSize="20"  
+                 GotFocus="TextBoxTeamName_GotFocus" 
+                 LostFocus="TextBoxTeamName_LostFocus" 
+                 InputScope="Text" 
+                 MaxLength="32"
+                 BorderBrush="{StaticResource TextBoxBorderBrush}"
+                 Text="{Binding Path=TeamName, Mode=OneWay}"
+                 Height="70" Background="White"/>-->
+        
+        <!--mobile-->
+        <customcontrols:FieldTitleAndError Name="TitleMobile" Grid.Row="10" Grid.Column="0" Title="mobile" />
+        <TextBox Name="TextBoxMobile" 
+                 Grid.Row="11" 
+                 FontSize="20" 
+                 VerticalAlignment="Center" 
+                 GotFocus="TextBoxMobile_GotFocus" 
+                 LostFocus="TextBoxMobile_LostFocus" 
+                 KeyUp="TextBoxMobile_KeyUp" 
+                 InputScope="TelephoneNumber" 
+                 MaxLength="16" 
+                 BorderBrush="{StaticResource TextBoxBorderBrush}"
+                 Text="{Binding Path=Mobile, Mode=OneWay}"
+                 Height="70" Background="White">
+        </TextBox>
+
+        <!--my country -->
+        <TextBlock Grid.Row="12" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Padding="20">my country</TextBlock>
+        <customcontrols:MyCountrySelectorControl
+            x:Name="MyCountry" 
+            NoSelectionMadeText="Please select your country"
+            Grid.Row="13" 
+            Height="Auto" />
+        
+        <!--favourite team 1-->
+        <TextBlock Grid.Row="14" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Padding="20" Visibility="Visible">first favourite team</TextBlock>
+        <customcontrols:FavouriteTeamSelectorControl 
+            x:Name="FavouriteTeam1" 
+            NoSelectionMadeText="Please select a first favourite team"
+            Grid.Row="15" 
+            Height="Auto" />
+
+        <!--fav team 2-->
+        <TextBlock Grid.Row="16" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Padding="20" Visibility="Visible">second favourite team</TextBlock>
+        <customcontrols:FavouriteTeamSelectorControl 
+            x:Name="FavouriteTeam2" 
+            NoSelectionMadeText="Please select a second favourite team"
+            Grid.Row="17" 
+            Height="Auto" />
+        
+    </Grid>
+    
+</UserControl>

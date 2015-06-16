@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppBarHelp" xml:space="preserve">
+    <value>aide</value>
+  </data>
+  <data name="AppBarHistory" xml:space="preserve">
+    <value>historique</value>
+  </data>
+  <data name="AppBarSearch" xml:space="preserve">
+    <value>rechercher</value>
+  </data>
+  <data name="AppBarSettings" xml:space="preserve">
+    <value>paramètres</value>
+  </data>
+  <data name="AppBarShop" xml:space="preserve">
+    <value>boutique</value>
+  </data>
+  <data name="AppBarSubmit" xml:space="preserve">
+    <value>envoyer</value>
+  </data>
+  <data name="CentreBackName" xml:space="preserve">
+    <value>Défenseur central</value>
+  </data>
+  <data name="EuropeName" xml:space="preserve">
+    <value>Europe</value>
+  </data>
+  <data name="ForwardName" xml:space="preserve">
+    <value>Attaquant</value>
+  </data>
+  <data name="FullViewPivot" xml:space="preserve">
+    <value>Vue complète</value>
+  </data>
+  <data name="GoalKeeperName" xml:space="preserve">
+    <value>Gardien de but</value>
+  </data>
+  <data name="LeftBackName" xml:space="preserve">
+    <value>Arrière gauche</value>
+  </data>
+  <data name="MidfieldName" xml:space="preserve">
+    <value>Milieu défensif</value>
+  </data>
+  <data name="ProductTitle" xml:space="preserve">
+    <value>Fans All Star</value>
+  </data>
+  <data name="RightBackName" xml:space="preserve">
+    <value>Arrière droit</value>
+  </data>
+  <data name="ROTWName" xml:space="preserve">
+    <value>Reste du monde</value>
+  </data>
+  <data name="SubstituteDefenderName" xml:space="preserve">
+    <value>Défenseur remplaçant</value>
+  </data>
+  <data name="SubstituteForwardName" xml:space="preserve">
+    <value>Attaquant remplaçant</value>
+  </data>
+  <data name="SubstituteKeeperName" xml:space="preserve">
+    <value>Gardien de but remplaçant</value>
+  </data>
+  <data name="SubstituteMidfielderName" xml:space="preserve">
+    <value>Milieu défensif remplaçant</value>
+  </data>
+  <data name="AppBarGoBack" xml:space="preserve">
+    <value>retour</value>
+  </data>
+  <data name="AppBarLogin" xml:space="preserve">
+    <value>connexion</value>
+  </data>
+  <data name="AppBarRegister" xml:space="preserve">
+    <value>inscription</value>
+  </data>
+  <data name="AppBarResetPassword" xml:space="preserve">
+    <value>réinitialiser un mot de passe</value>
+  </data>
+  <data name="AppBarSortAscending" xml:space="preserve">
+    <value>trier par ordre ascendant</value>
+  </data>
+  <data name="AppBarSortDescending" xml:space="preserve">
+    <value>trier par ordre descendant</value>
+  </data>
+  <data name="AppBarUpdatePassword" xml:space="preserve">
+    <value>actualiser un mot de passe</value>
+  </data>
+  <data name="BuyVotesPage" xml:space="preserve">
+    <value>Acheter des votes</value>
+  </data>
+  <data name="ByClubTitle" xml:space="preserve">
+    <value>Par club</value>
+  </data>
+  <data name="ByCountryTitle" xml:space="preserve">
+    <value>Par pays</value>
+  </data>
+  <data name="ByNameTitle" xml:space="preserve">
+    <value>Par nom</value>
+  </data>
+  <data name="ByPositionTitle" xml:space="preserve">
+    <value>Par position</value>
+  </data>
+  <data name="CastingVote" xml:space="preserve">
+    <value>Enregistrement du vote</value>
+  </data>
+  <data name="ChangingPassword" xml:space="preserve">
+    <value>Modification du mot de passe</value>
+  </data>
+  <data name="ConfirmEmailWatermark" xml:space="preserve">
+    <value>confirmer votre adresse e-mail</value>
+  </data>
+  <data name="ConfirmPasswordWatermark" xml:space="preserve">
+    <value>confirmer votre mot de passe</value>
+  </data>
+  <data name="EmailWatermark" xml:space="preserve">
+    <value>votre adresse e-mail</value>
+  </data>
+  <data name="EnterValidEmail" xml:space="preserve">
+    <value>Veuillez entrer une adresse e-mail valide</value>
+  </data>
+  <data name="FavouritesPage" xml:space="preserve">
+    <value>sélectionnez votre club préféré</value>
+  </data>
+  <data name="FavouriteTeam1" xml:space="preserve">
+    <value>Veuillez sélectionner une première équipe favorite</value>
+  </data>
+  <data name="FavouriteTeam2" xml:space="preserve">
+    <value>Veuillez sélectionner une deuxième équipe favorite</value>
+  </data>
+  <data name="FirstnameWatermark" xml:space="preserve">
+    <value>votre prénom</value>
+  </data>
+  <data name="HelpPage" xml:space="preserve">
+    <value>Page d'aide</value>
+  </data>
+  <data name="ListingByClub" xml:space="preserve">
+    <value>liste par club :</value>
+  </data>
+  <data name="ListingByCountry" xml:space="preserve">
+    <value>liste par pays :</value>
+  </data>
+  <data name="ListingByPosition" xml:space="preserve">
+    <value>liste par position :</value>
+  </data>
+  <data name="LoginPageTitle" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="MobileWatermark" xml:space="preserve">
+    <value>votre numéro de mobile</value>
+  </data>
+  <data name="MyCountryPage" xml:space="preserve">
+    <value>sélectionnez votre pays</value>
+  </data>
+  <data name="NewPasswordMessage" xml:space="preserve">
+    <value>Un nouveau mot de passe vient de vous être envoyé par e-mail</value>
+  </data>
+  <data name="NoVotesMessage" xml:space="preserve">
+    <value>Vous n'avez pas assez de votes. Voulez-vous visiter la boutique ?</value>
+  </data>
+  <data name="NoVotesTitle" xml:space="preserve">
+    <value>Nombre de votes insuffisant</value>
+  </data>
+  <data name="PasswordResetDesc" xml:space="preserve">
+    <value>Veuillez indiquer l'adresse e-mail de votre inscription pour recevoir un nouveau mot de passe.</value>
+  </data>
+  <data name="PasswordResetFailed" xml:space="preserve">
+    <value>Échec de la modification du mot de passe</value>
+  </data>
+  <data name="PasswordWatermark" xml:space="preserve">
+    <value>choisissez un mot de passe</value>
+  </data>
+  <data name="PayPalLink" xml:space="preserve">
+    <value>Vous serez redirigé vers le site de Paypal pour terminer la transaction</value>
+  </data>
+  <data name="PayPalNavFailed" xml:space="preserve">
+    <value>échec de la redirection vers paypal</value>
+  </data>
+  <data name="PayPalTitle" xml:space="preserve">
+    <value>Paiement Paypal</value>
+  </data>
+  <data name="PlayersTitle" xml:space="preserve">
+    <value>Joueurs</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>politique de confidentialité</value>
+  </data>
+  <data name="PurchaseLoginWarning" xml:space="preserve">
+    <value>Vous devez être connecté pour acheter des votes.</value>
+  </data>
+  <data name="RegistrationHelp" xml:space="preserve">
+    <value>Veuillez indiquer vos coordonnées, puis appuyez sur le bouton coché situé en bas</value>
+  </data>
+  <data name="RegistrationPage" xml:space="preserve">
+    <value>S'inscrire</value>
+  </data>
+  <data name="ResetEmailWatermark" xml:space="preserve">
+    <value>indiquez l'adresse e-mail de votre inscription</value>
+  </data>
+  <data name="ResetOtherDesc" xml:space="preserve">
+    <value>Si vous souhaitez obtenir un identifiant pour réinitialiser le mot de passe d'un compte différent de celui indiqué ci-dessus</value>
+  </data>
+  <data name="ResetPasswordPage" xml:space="preserve">
+    <value>réinitialiser un mot de passe</value>
+  </data>
+  <data name="SimulatedVoteFailed" xml:space="preserve">
+    <value>Vote simulé {0} échec !</value>
+  </data>
+  <data name="SimulatedVoteSuccessful" xml:space="preserve">
+    <value>La simulation de vote {0} est terminée !</value>
+  </data>
+  <data name="SurnameWatermark" xml:space="preserve">
+    <value>votre nom de famille</value>
+  </data>
+  <data name="TermsAccept" xml:space="preserve">
+    <value>J'accepte les conditions du jeu</value>
+  </data>
+  <data name="TermsURL" xml:space="preserve">
+    <value>conditions</value>
+  </data>
+  <data name="ValidateAccountMessage1" xml:space="preserve">
+    <value>Votre vote sera enregistré. Cependant, pour que votre vote soit comptabilité, vous devez confirmer votre compte en cliquant sur le lien indiqué dans le message de bienvenue.</value>
+  </data>
+  <data name="ValidateAccountMessage2" xml:space="preserve">
+    <value>Si vous avez confirmé au cours des dernières minutes</value>
+  </data>
+  <data name="ValidateAccountTitle" xml:space="preserve">
+    <value>Votre inscription n'est pas encore validée</value>
+  </data>
+  <data name="VoteFailed" xml:space="preserve">
+    <value>Échec du vote</value>
+  </data>
+  <data name="VoteLoginWarning" xml:space="preserve">
+    <value>Vous devez être connecté pour voter.</value>
+  </data>
+  <data name="VoteSuccessful" xml:space="preserve">
+    <value>Votre vote pour {0}  a été envoyé avec succès</value>
+  </data>
+  <data name="AccountsTitle" xml:space="preserve">
+    <value>mon compte</value>
+  </data>
+  <data name="ActivationCompleted" xml:space="preserve">
+    <value>L'activation de votre compte est terminée</value>
+  </data>
+  <data name="APIUpdates" xml:space="preserve">
+    <value>{0} Changements Api reçus</value>
+  </data>
+  <data name="ApplyUpdates" xml:space="preserve">
+    <value>Application des mises à jour. Veuillez patienter</value>
+  </data>
+  <data name="ChangeMyPassword" xml:space="preserve">
+    <value>modifier mon mot de passe</value>
+  </data>
+  <data name="ClearSearch" xml:space="preserve">
+    <value>effacer la recherche</value>
+  </data>
+  <data name="ConfirmNewPasswordWatermark" xml:space="preserve">
+    <value>confirmer le nouveau mot de passe</value>
+  </data>
+  <data name="EnterCurrentPassword" xml:space="preserve">
+    <value>Veuillez indiquer votre mot de passe actuel</value>
+  </data>
+  <data name="EnterNewPassword" xml:space="preserve">
+    <value>Veuillez choisir un nouveau mot de passe</value>
+  </data>
+  <data name="EnterPinFromEmail" xml:space="preserve">
+    <value>Veuillez entrer l'identifiant que vous avez reçu par e-mail</value>
+  </data>
+  <data name="EnterPinInstruction" xml:space="preserve">
+    <value>Entrez l'identifiant que vous avez reçu par e-mail pour activer votre compte</value>
+  </data>
+  <data name="EnterPinWatermark" xml:space="preserve">
+    <value>entrer l'identifiant</value>
+  </data>
+  <data name="EuropeAbriviation" xml:space="preserve">
+    <value>EUR</value>
+  </data>
+  <data name="ExistingPasswordWatermark" xml:space="preserve">
+    <value>votre mot de passe existant</value>
+  </data>
+  <data name="LastVoteUpdate" xml:space="preserve">
+    <value>Dernière mise à jour réussie {0}</value>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>Plus tard</value>
+  </data>
+  <data name="LoggedOutMessage" xml:space="preserve">
+    <value>Vous êtes maintenant déconnecté</value>
+  </data>
+  <data name="LoginButton" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="LoginPrompt" xml:space="preserve">
+    <value>Veuillez indiquer vos informations de connexion.</value>
+  </data>
+  <data name="NewPasswordWatermark" xml:space="preserve">
+    <value>choisissez un nouveau mot de passe</value>
+  </data>
+  <data name="NewVotesAdded" xml:space="preserve">
+    <value>Les nouveaux votes ont été ajoutés à votre compte</value>
+  </data>
+  <data name="NotLoggedInPopup" xml:space="preserve">
+    <value>Vous n'êtes pas connecté sur ce téléphone</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Votre mot de passe a été modifié</value>
+  </data>
+  <data name="PasswordLength" xml:space="preserve">
+    <value>Au moins 6 caractères</value>
+  </data>
+  <data name="PasswordMatch" xml:space="preserve">
+    <value>Les mots de passe doivent correspondre</value>
+  </data>
+  <data name="PasswordUpdateText" xml:space="preserve">
+    <value>Entrez votre mot de passe actuel et choisissez un nouveau mot de passe.</value>
+  </data>
+  <data name="PlayerCulled" xml:space="preserve">
+    <value>Joueur réformé</value>
+  </data>
+  <data name="PurchasesTitle" xml:space="preserve">
+    <value>mes achats</value>
+  </data>
+  <data name="RegisterButton" xml:space="preserve">
+    <value>S'inscrire</value>
+  </data>
+  <data name="ResendEmailFailed" xml:space="preserve">
+    <value>Renvoyer l'e-mail en échec</value>
+  </data>
+  <data name="ResendEmailMessage" xml:space="preserve">
+    <value>Renvoi de l'e-mail d'activation</value>
+  </data>
+  <data name="ResendPin" xml:space="preserve">
+    <value>Si vous souhaitez recevoir à nouveau votre identifiant d'activation à l'adresse e-mail de votre inscription</value>
+  </data>
+  <data name="ResendPinButton" xml:space="preserve">
+    <value>Renvoyer l'identifiant d'activation</value>
+  </data>
+  <data name="ResetMyPasswordLink" xml:space="preserve">
+    <value>Réinitialiser mon mot de passe</value>
+  </data>
+  <data name="ROTWAbriviation" xml:space="preserve">
+    <value>RDM</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>sauvegarder des changements</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>paramètres</value>
+  </data>
+  <data name="ShowAllApis" xml:space="preserve">
+    <value>afficher tout</value>
+  </data>
+  <data name="ShowApisNeeded" xml:space="preserve">
+    <value>afficher où les apis sont requis</value>
+  </data>
+  <data name="TransactionUpdate" xml:space="preserve">
+    <value>Quand vous avez terminé votre transaction</value>
+  </data>
+  <data name="UpdateAccountFailed" xml:space="preserve">
+    <value>Échec de la mise à jour du compte</value>
+  </data>
+  <data name="UpdateAccountSuccess" xml:space="preserve">
+    <value>Votre compte a été mis à jour avec succès</value>
+  </data>
+  <data name="UpdatesTitle" xml:space="preserve">
+    <value>Mises à jour</value>
+  </data>
+  <data name="UpdatingAccount" xml:space="preserve">
+    <value>Mise à jour du compte en cours</value>
+  </data>
+  <data name="VotesTitle" xml:space="preserve">
+    <value>mes votes</value>
+  </data>
+  <data name="AccountValidated" xml:space="preserve">
+    <value>Votre compte a été validé</value>
+  </data>
+  <data name="ActivatePageTitle" xml:space="preserve">
+    <value>Activer le compte</value>
+  </data>
+  <data name="AppBarActivate" xml:space="preserve">
+    <value>activer</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="CastVoteButton" xml:space="preserve">
+    <value>Enregistrer un vote</value>
+  </data>
+  <data name="HelpChoosePlayer" xml:space="preserve">
+    <value>Choisir un joueur</value>
+  </data>
+  <data name="HelpChoosePlayerText" xml:space="preserve">
+    <value>Sélectionnez un joueur pour cette position dans la liste déroulante.</value>
+  </data>
+  <data name="HelpNavigation" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="HelpNavigationText" xml:space="preserve">
+    <value>Glisser l'écran d'accueil pour voir d'autres vues du terrain</value>
+  </data>
+  <data name="HelpNewGame" xml:space="preserve">
+    <value>Faire un autre jeu</value>
+  </data>
+  <data name="HelpNewGameText" xml:space="preserve">
+    <value>Vous pouvez faire un autre jeu en achetant simplement des votes supplémentaires.</value>
+  </data>
+  <data name="HelpPosition" xml:space="preserve">
+    <value>Choisir une position</value>
+  </data>
+  <data name="HelpPositionText" xml:space="preserve">
+    <value>Commencez à placer tous les joueurs sur le terrain en cliquant sur une position</value>
+  </data>
+  <data name="HelpSubmit" xml:space="preserve">
+    <value>Envoyer un jeu</value>
+  </data>
+  <data name="HelpSubmitText" xml:space="preserve">
+    <value>Quand vous avez sélectionné vos 30 joueurs (avec les remplaçant), envoyez votre jeu.</value>
+  </data>
+  <data name="HelpTitle" xml:space="preserve">
+    <value>Sélectionner la meilleure équipe</value>
+  </data>
+  <data name="HelpVoteForBest" xml:space="preserve">
+    <value>Votez pour les meilleurs joueurs à chaque position pour les équipes Europe et Reste du Monde.</value>
+  </data>
+  <data name="MoveSliderVoteText" xml:space="preserve">
+    <value>Déplacez le curseur si vous voulez enregistrer plusieurs votes :</value>
+  </data>
+  <data name="NoName" xml:space="preserve">
+    <value>aucun nom</value>
+  </data>
+  <data name="PlayerMoveSynced" xml:space="preserve">
+    <value>Les valeurs mobiles du joueur ont été synchronisées</value>
+  </data>
+  <data name="PlayerVoteText" xml:space="preserve">
+    <value>Vous êtes sur le point de voter pour le joueur suivant</value>
+  </data>
+  <data name="PositionSelectVote" xml:space="preserve">
+    <value>Veuillez sélectionner une position pour ce joueur :</value>
+  </data>
+  <data name="PositionVoteText" xml:space="preserve">
+    <value>Pour la position suivante :</value>
+  </data>
+  <data name="TransactionSynced" xml:space="preserve">
+    <value>Vos transactions ont été synchronisées</value>
+  </data>
+  <data name="VoteConfirmTitle" xml:space="preserve">
+    <value>Vote Confirmer</value>
+  </data>
+  <data name="VotesSynced" xml:space="preserve">
+    <value>Vos votes ont été synchronisés</value>
+  </data>
+</root>

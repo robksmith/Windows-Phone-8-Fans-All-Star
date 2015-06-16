@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.LongListLeaguesControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls"
+             xmlns:listcontrols="clr-namespace:Zengo.WP8.FAS.Controls.ListItems"
+             xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+             mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <UserControl.Resources>
+
+        <!-- The group header template, for groups in the main list -->
+        <DataTemplate x:Key="LeagueGroupHeader">
+
+            <customcontrols:JumpKeyHeader x:Name="JumpKeyHeaderOnPage" Grid.Row="2" />
+
+        </DataTemplate>
+
+        <!-- The template for groups when they are items in the "array list". -->
+        <DataTemplate x:Key="LeagueItemHeader">
+
+            <customcontrols:JumpKey x:Name="JumpKeyOnPage" />
+
+        </DataTemplate>
+
+
+        <!-- The template for a club on the account page -->
+        <DataTemplate x:Key="LeagueTemplate" >
+
+            <listcontrols:LeagueItem x:Name="leagueTemplate" Background="Blue" />
+
+        </DataTemplate>
+
+    </UserControl.Resources>
+
+
+    <Grid x:Name="LayoutRoot" Style="{Binding GridStyle}" >
+
+        <toolkit:LongListSelector x:Name="LeagueLongList"
+                                          GroupHeaderTemplate="{StaticResource LeagueGroupHeader}"
+                                          GroupItemTemplate="{StaticResource LeagueItemHeader}"                                  
+                                          ItemTemplate="{StaticResource LeagueTemplate}"
+                                          Background="Transparent">
+            <toolkit:LongListSelector.GroupItemsPanel>
+                <ItemsPanelTemplate>
+                    <toolkit:WrapPanel/>
+                </ItemsPanelTemplate>
+            </toolkit:LongListSelector.GroupItemsPanel>
+        </toolkit:LongListSelector>
+    </Grid>
+</UserControl>

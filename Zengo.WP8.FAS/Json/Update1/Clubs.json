@@ -1,0 +1,21 @@
+﻿{
+   "response":[
+      {
+         "uuid":56,
+         "name":"Paris Saint Germain",
+         "image":"http:\/\/cdn.moshen.com\/images\/no-image.jpeg",
+         "league_id":5
+      },
+      {
+         "uuid":1250,
+         "name":"AAA Robs club",
+         "image":"http:\/\/cdn.moshen.com\/images\/no-image.jpeg",
+         "league_id":5
+      }
+
+   ],
+   "error":{
+      "code":0,
+      "message":""
+   }
+}

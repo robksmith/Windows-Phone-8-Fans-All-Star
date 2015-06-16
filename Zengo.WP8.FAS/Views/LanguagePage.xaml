@@ -1,0 +1,55 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Zengo.WP8.FAS.LanguagePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:languageViewModel="clr-namespace:Zengo.WP8.FAS.ViewModels"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="LanguageTemplage">
+            <StackPanel Orientation="Horizontal">
+                <Image Margin="10" Source="{Binding FlagUri}" Height="30"/>
+                <TextBlock Margin="10" Text="{Binding Description}"/>
+            </StackPanel>
+        </DataTemplate>
+        
+    </phone:PhoneApplicationPage.Resources>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" DataContext="{Binding Source={StaticResource LanguageDataSource}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Margin="0" Opacity="1" Source="" Stretch="Fill"/>
+        <!--The header control-->
+        <customcontrols:PageSingleHeaderControl Name="PageHeaderControl" Grid.Row="0" />
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="Images/logo.png" Height="95"/>
+            <TextBlock x:Name="SelectLang" Grid.Row="1" Margin="0,6,0,10" FontWeight="Bold" FontSize="26" TextAlignment="Center" Text="{Binding LocalizedResources.SelectLanguage, Source={StaticResource LocalizedStrings}}"/>
+            <Grid Grid.Row="2" Margin="160,20,140,0">
+                <ListBox DataContext="{StaticResource LanguageDataSource}" ItemsSource="{Binding SupportedLanguages}" ItemTemplate="{StaticResource LanguageTemplage}" SelectionMode="Single" SelectedItem="{Binding CurrentLanguage, Mode=TwoWay}" />
+            </Grid>
+
+        </Grid>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

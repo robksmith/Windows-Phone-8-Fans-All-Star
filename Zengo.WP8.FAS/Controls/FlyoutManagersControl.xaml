@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.FlyoutManagersControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="800" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Height="136" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" >
+
+        <!--<Grid x:Name="GridGrayedOut" Height="800" Width="480" Margin="0 0 -240 0" Background="Black" Opacity="0.75" Visibility="Collapsed" Tap="GridGrayedOut_Tap">
+        </Grid>-->
+
+        <Grid x:Name="GridSlidInState" Visibility="Visible" Width="53" Height="136" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="570" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="53" />
+            </Grid.ColumnDefinitions>
+
+            <Canvas Grid.Row="0" Grid.Column="0" Height="570" Background="Transparent">
+
+                <Image Name="ImageButtonIn" Tap="ImageButtonIn_Tap" ManipulationStarted="ImageButtonIn_ManipulationStarted_1" ManipulationCompleted="ImageButtonIn_ManipulationCompleted_1"></Image>
+
+            </Canvas>
+
+        </Grid>
+        
+        <Grid x:Name="GridSlidOutState" Visibility="Collapsed" Width="173" HorizontalAlignment="Left">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="570" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="53" />
+            </Grid.ColumnDefinitions>
+
+
+            <Canvas Grid.Row="0" Grid.Column="0" Height="570" Background="{StaticResource FlyoutbackgroundBrush}">
+
+                <customcontrols:PlayerIconControl Name="PlayerManager" PositionKey="MG" Canvas.Left="0" Canvas.Top="0" />
+
+            </Canvas>
+
+
+            <Canvas Grid.Row="0" Grid.Column="1" Height="570" Background="Transparent">
+
+                <Image Name="ImageButtonOut" Tap="ImageButtonOut_Tap"  ManipulationStarted="ImageButtonOut_ManipulationStarted_1" ManipulationCompleted="ImageButtonOut_ManipulationCompleted_1"></Image>
+
+            </Canvas>
+            
+        </Grid>
+
+    </Grid>
+    
+</UserControl>

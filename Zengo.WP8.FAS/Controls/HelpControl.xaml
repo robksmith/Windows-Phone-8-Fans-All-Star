@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="Zengo.WP8.FAS.Controls.HelpControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:customcontrols="clr-namespace:Zengo.WP8.FAS.Controls;assembly=Zengo.WP8.FAS"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource StandardTextColour}"
+    d:DesignHeight="2300" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent"  Height="2300">
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Canvas>
+
+            <!--Heading-->
+            <TextBlock Grid.Row="0" TextWrapping="Wrap" FontSize="25" Padding="10" TextAlignment="Center" Width="480" Text="{Binding LocalizedResources.HelpTitle, Source={StaticResource LocalizedStrings}}" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="435" FontSize="25" Canvas.Left="23" Canvas.Top="60" Text="{Binding LocalizedResources.HelpVoteForBest, Source={StaticResource LocalizedStrings}}"/>
+
+            <TextBlock Grid.Row="0" TextWrapping="Wrap" FontSize="25" Padding="10" TextAlignment="Center" Width="480" Text="{Binding LocalizedResources.HelpNavigation, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" Canvas.Top="190"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="435" FontSize="25" Canvas.Left="23" Canvas.Top="240" Text="{Binding LocalizedResources.HelpNavigationText, Source={StaticResource LocalizedStrings}}"/>
+
+            <Image Width="400" Source="/Images/sta_help_swipe.png" Canvas.Left="40" Canvas.Top="327" />
+
+            <TextBlock Grid.Row="0" TextWrapping="Wrap" FontSize="25" Padding="10" TextAlignment="Center" Width="480" Text="{Binding LocalizedResources.HelpPosition, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" Canvas.Top="480"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="435" FontSize="25" Canvas.Left="23" Canvas.Top="530" Text="{Binding LocalizedResources.HelpPositionText, Source={StaticResource LocalizedStrings}}"/>
+
+            <Image Source="/Images/sta_help_position.png" Canvas.Left="126" Canvas.Top="600" />
+
+            <TextBlock Grid.Row="0" TextWrapping="Wrap" FontSize="25" Padding="10" TextAlignment="Center" Width="480" Text="{Binding LocalizedResources.HelpChoosePlayer, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" Canvas.Top="850"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="435" FontSize="25" Canvas.Left="23" Canvas.Top="900" Text="{Binding LocalizedResources.HelpChoosePlayerText, Source={StaticResource LocalizedStrings}}"/>
+
+            <Image Source="/Images/sta_help_pick.png" Canvas.Left="124" Canvas.Top="1000" />
+
+            <TextBlock Grid.Row="0" TextWrapping="Wrap" FontSize="25" Padding="10" TextAlignment="Center" Width="480" Text="{Binding LocalizedResources.HelpSubmit, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" Canvas.Top="1300"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="435" FontSize="25" Canvas.Left="23" Canvas.Top="1350" Text="{Binding LocalizedResources.HelpSubmitText, Source={StaticResource LocalizedStrings}}"/>
+
+            <Image Source="/Images/sta_help_submit.png" Canvas.Left="40" Canvas.Top="1444" Width="400" />
+
+            <TextBlock Grid.Row="0" TextWrapping="Wrap" FontSize="25" Padding="10" TextAlignment="Center" Width="480" Text="{Binding LocalizedResources.HelpNewGame, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" Canvas.Top="1670"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" Width="435" FontSize="25" Canvas.Left="23" Canvas.Top="1720" Text="{Binding LocalizedResources.HelpNewGameText, Source={StaticResource LocalizedStrings}}"/>
+
+            <Image Source="/Images/sta_help_shop.png" Canvas.Left="160" Canvas.Top="1820" />
+
+            <!--<Button Canvas.Top="2000" Click="FAQButton_Click" Content="{Binding LocalizedResources.FAQButton, Source={StaticResource LocalizedStrings}}" FontSize="22" Width="200" Height="100" VerticalAlignment="Top" BorderBrush="Transparent" Foreground="{StaticResource StandardTextColour}" Canvas.Left="140">
+                <Button.Background>
+                    <ImageBrush ImageSource="/images/btn_gold_default.png"/>
+                </Button.Background>
+            </Button>-->
+        </Canvas>
+
+    </Grid>
+
+</UserControl>

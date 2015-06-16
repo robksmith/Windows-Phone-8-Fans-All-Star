@@ -1,0 +1,1 @@
+﻿{"response":[{"uuid":1,"name":"Goalkeeper","group":"Keeper"},{"uuid":2,"name":"Centre Back","group":"Defence"},{"uuid":3,"name":"Midfielder","group":"Midfield"},{"uuid":4,"name":"Forward","group":"Forward"},{"uuid":6,"name":"Left Back","group":"Defence"},{"uuid":7,"name":"Right Back","group":"Defence"}],"error":{"code":0,"message":"","status":200}}
