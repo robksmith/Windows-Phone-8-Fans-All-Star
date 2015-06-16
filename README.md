@@ -1,7 +1,7 @@
 Fans All Star - Windows Phone 8
 ===============================
 
-Whilst writing Fans All Star, the company I was writing it for **went bust** when the project was nearly complete - this is the near frontend complete project to be used as a reference.
+Whilst writing Fans All Star, the company I was writing it for **went bust** when the project was nearly complete - this is the near complete frontend project to be used as a reference.
 
 Inside **Zengo.WP8.FAS** you will find the **Controls** and **Views** directory which is where most layouts are found
 
